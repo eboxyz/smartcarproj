@@ -95,7 +95,7 @@ app.post('/request', (req, res, next) => {
 
     const { vehicleId, requestType: type } = req.body;
     const vehicle = vehicles[vehicleId];
-    const instance = new smartcar.Vehicle(vehicleId, access.AccessToken);
+    const instance = new smartcar.Vehicle(vehicleId, access.accessToken);
 
     let data = null;
 
